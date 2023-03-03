@@ -20,6 +20,9 @@
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
 
+  <meta name="google-signin-client_id" content="610407661767-rdu0et6ub5r4lm5ocu7klei2l8spkqc3">
+  <meta name="google-signin-client_id" content="610407661767-0lijvsl4qarj9jcce9qui6a530t9gsns">
+
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -40,7 +43,20 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   <script>
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCX_0J5liSZmAiwuhRXT-GCndCK4S9rGyg",
+      authDomain: "deep-fake-detector-a793f.firebaseapp.com",
+      projectId: "deep-fake-detector-a793f",
+      storageBucket: "deep-fake-detector-a793f.appspot.com",
+      messagingSenderId: "610407661767",
+      appId: "1:610407661767:web:34177bfd9b4d23a4787ee2",
+      measurementId: "G-V1LSPTG6LH"
+    };
+    firebase.initializeApp(firebaseConfig);
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
